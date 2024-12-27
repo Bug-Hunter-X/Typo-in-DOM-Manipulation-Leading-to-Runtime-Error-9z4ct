@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect way to access a non-existent element
+    const myElement = document.getElementByIdx('myDiv'); //Typo: incorrect method name
+    if (myElement) {
+      myElement.innerHTML = "Text changed!";
+    } else {
+      console.error('Element not found');
+    }
+  </script>
+</body>
+</html>
